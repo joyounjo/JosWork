@@ -87,6 +87,7 @@
                       <label class="warning" prop="client_staff_cop_nm" >
                         所属先:
                       </label>
+                      <el-col><el-button size="mini" type="success" @click="">新規取引先追加</el-button></el-col>
                       <el-input :inline="true" type="text" v-model="client_staff_cop_nm" style="width:150px;" auto-complete="off"></el-input>
                     </el-form-item>
                     <el-form-item label="役割" prop="client_staff_dept_nm">
@@ -169,7 +170,7 @@
                             <span id="accept_button"><el-button @click="closeinner" >閉じる</el-button></span>
                           </div>
                       </el-dialog>
-                      <el-button type="primary" @click="innerVisible = true">選択</el-button>
+                      <el-col><el-button size="mini" type="success" @click="innerVisible = true">選択</el-button></el-col>
                     </el-form-item>
                     <el-form-item label="職種">
                       <el-checkbox-group v-model="checkList">
@@ -260,6 +261,7 @@
                         郵便番号:
                       </label>
                       <el-input :inline="true" type="text" v-model="empInfo.postcode" style="width:150px;" auto-complete="off" placeholder="例)000-0000"></el-input>
+                      <el-col><el-button size="mini" type="success" @click="">住所検索</el-button></el-col>
                     </el-form-item>
                     <el-form-item>
                       <label class="warning" prop="adress">
